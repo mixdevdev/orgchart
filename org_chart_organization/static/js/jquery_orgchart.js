@@ -1,13 +1,3 @@
-/*
- * jQuery OrgChart Plugin
- * https://github.com/dabeng/OrgChart
- *
- * Copyright 2016, dabeng
- * https://github.com/dabeng
- *
- * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
- */
 'use strict';
 
 (function (factory) {
