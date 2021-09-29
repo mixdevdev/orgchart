@@ -4,7 +4,7 @@
     <div id="chart-container"></div>
     <script type="text/javascript">
       $(function() {
-        <!-- Get Department Data -->
+        <!-- Get Category Data -->
         var datascource = department_data.values;
 
         $('#chart-container').orgchart({

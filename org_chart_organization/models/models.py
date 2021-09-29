@@ -2,9 +2,9 @@
 from odoo import models, fields, api
 
 class OrgChartDepartment(models.Model):
-	_name = 'org.chart.department'
+	_name = 'org.chart.category'
 
-	name = fields.Char("Org Chart Department")
+	name = fields.Char("Org Chart Category")
 
 	@api.model
 	def get_department_data(self):
@@ -13,9 +13,9 @@ class OrgChartDepartment(models.Model):
 			'title': '',
 			'children': [],
 		}
-		departments = self.env['product.category'].search([('parent_id','=',False)])
-		for department in departments:
-			data['children'].append(self.get_children(department, 'middle-level'))
+		categorys = self.env['product.category'].search([('parent_id', '=', False)])
+		for category in categorys:
+			data['children'].append(self.get_children(category, 'middle-level'))
 
 		return {'values': data}
 

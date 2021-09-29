@@ -18,7 +18,7 @@ odoo.define("org_chart_organization.org_chart", function (require) {
         var self = this;
         if (context.tag == 'org_chart_organization.org_chart_department') {
             self._rpc({
-                model: 'org.chart.department',
+                model: 'org.chart.category',
                 method: 'get_department_data',
             }, []).then(function(result){
                 department_data = result;
