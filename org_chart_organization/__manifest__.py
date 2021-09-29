@@ -7,11 +7,11 @@
 	'category': 'Human Resources',
 	'version': '2.0',
 	# 'license': 'AGPL-3',
-	'depends': ['hr','stock'],
+	'depends': ['stock'],
 	'data': ['views/org_chart_views.xml'],
 	
 	'qweb': [
-        "static/src/xml/org_chart_department.xml",
+        "static/src/xml/org_chart_category.xml",
     ],
 	'installable': True,
 	'application': True,
